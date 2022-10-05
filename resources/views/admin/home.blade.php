@@ -20,9 +20,11 @@
       <!-- / Menu -->
 
       <!-- Layout container -->
-      
+
 
       @include('admin.body')
+
+    </div>
 
     <!-- Overlay -->
     <div class="layout-overlay layout-menu-toggle"></div>
@@ -32,7 +34,7 @@
 
   @include('admin.script')
 
-  
+
 </body>
 
 </html>

@@ -55,7 +55,8 @@
         <div class="row align-items-center">
           
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">eG System<span class="text-primary">.</span> </a></h1>
+            <!-- <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">eG System<span class="text-primary">.</span> </a></h1> -->
+            <h3 class="mb-0 site-logo"><a href="index.html" >eG System<span class="text-primary">.</span> </a></h3>
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
@@ -99,15 +100,17 @@
 
   
      
-    <div class="site-blocks-cover overlay" style="background-image: url(frontend/images/hero_2.jpg);" data-aos="fade" id="home-section">
+    <!-- <div class="site-blocks-cover overlay" style="background-image: url(frontend/images/hero_2.jpg);" data-aos="fade" id="home-section"> -->
+    <div class="site-blocks-cover overlay" style="background-image: url('assets/images/top_part/{{ $data->bg_image }}'); box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.6);" data-aos="fade" id="home-section">
 
       <div class="container">
         <div class="row align-items-center justify-content-center">
 
+        <!-- src="assets/images/top_part/{{ $data->bg_image }}" -->
           
           <div class="col-md-8 mt-lg-5 text-center">
-            <h1 class="text-uppercase" data-aos="fade-up">Welcome</h1>
-            <p class="mb-5 desc"  data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio soluta eius error.</p>
+            <h1 class="text-uppercase" data-aos="fade-up">{{ $data->title }}</h1>
+            <p class="mb-5 desc"  data-aos="fade-up" data-aos-delay="100">{{ $data->sub_title }}</p>
             <div data-aos="fade-up" data-aos-delay="100">
               <a href="#contact-section" class="btn smoothscroll btn-primary mr-2 mb-2">Get In Touch</a>
             </div>
@@ -122,6 +125,7 @@
         </span>
       </a>
     </div>  
+    
 
     
     <div class="site-section cta-big-image" id="about-section">

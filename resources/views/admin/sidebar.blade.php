@@ -63,7 +63,7 @@
 
       <ul class="menu-sub">
         <li class="menu-item">
-          <a href="layouts-without-menu.html" class="menu-link">
+          <a href="{{ url('top_slider') }}" class="menu-link">
             <div data-i18n="Without menu">Top Slider</div>
           </a>
         </li>
